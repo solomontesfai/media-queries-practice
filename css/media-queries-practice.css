@@ -1,7 +1,105 @@
 /* ----------------------------------------
 
 Styles for Media Queries Practice Exercise
-Author: Your Name Here 
+Author: Solomon Tesfai
 
 ----------------------------------------- */
+/* Box-sizing border-box */
+body{
+    background-color: rgba(0,0,0,0.1);
+}
+* { box-sizing: border-box; }
+h1{
+text-align: center;
+}
 
+/* Some default styles to make each box visible. This targets all items with a class that starts with "box" */
+[class^="box"] {
+  color:white;
+  font-size: 30px;
+  text-align: center;
+  text-shadow:4px 4px 0 rgba(0,0,0,0.1);
+  padding:10px;
+  height: 24vH;
+}
+
+/* Colors for each box */
+.box1 { background:#1abc9c;
+width: 100vW;
+order: 0;
+align-self: 1;
+}
+.box2 { background:#3498db;
+width: 32%;
+order: 0;
+align-self: 1;
+}
+.box3 { background:#9b59b6;
+  width: 32%;
+  order: 0;
+  align-self: 10;
+}
+
+.box4 { background:#34495e;
+  width: 32%;
+  order: 0;
+  align-self: 10;
+}
+
+.box5 { background:#f1c40f;
+  width: 49%;
+  order: 0;
+  align-self: 10;
+}
+.box6 { background:#e67e22;
+  width: 49%;
+  order: 0;
+  align-self: 10;}
+.box7 { background:#e74c3c;
+  width: 24%;
+  order: 0;
+  align-self: 10;
+}
+.box8 { background:#bdc3c7;
+width: 24%;
+  order: 0;
+  align-self: 10;
+}
+.box9 { background:#2ecc71;
+  width: 24%;
+  order: 0;
+  align-self: 10;}
+
+.box10 { background:#16a085;
+  width: 24%;
+  order: 0;
+  align-self: 10;}
+
+/* Border for flex container */
+.flex-container {
+  border:10px solid goldenrod;
+}
+
+/* We start writing our flexbox here. The above is just page setup */
+
+.flex-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 100vh;
+  align-items: flex-start;
+  align-content: stretch;
+  }
+@media screen and (max-width: 480px) {
+    body{
+        background-color: #2522e6;
+    }
+    
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+    body {
+        background-color: red;
+    }
+    
+}
